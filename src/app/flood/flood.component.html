@@ -1,0 +1,5 @@
+<div id="container">
+    <div class="row" *ngFor="let row of flood.floodOptions.area; let rowIndex = index">
+        <div [ngClass]="'colored'+col" (mouseover)="changeColor(rowIndex, colIndex)" *ngFor="let col of row; let colIndex = index"></div>
+    </div>
+</div>

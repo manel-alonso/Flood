@@ -1,0 +1,34 @@
+
+.row {
+    height: 20px;
+}
+
+#container {
+    border: 1px solid;
+    height: 99.8%;
+    overflow: hidden;
+}
+
+.colored1 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    background: grey;
+}
+
+.colored2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    background: rgb(48, 48, 48);
+}
+
+.colored3 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    background: rgb(127, 174, 236);
+}
