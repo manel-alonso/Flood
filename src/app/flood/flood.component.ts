@@ -22,7 +22,9 @@ export class FloodComponent implements OnInit {
     }
 
     if(event.key == "x") {
-      this.flood.startFlood();
+      this.flood.startFlood().then(area => {
+        console.log("Finished with area:", area);
+      });
     }
   }
 

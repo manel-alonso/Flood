@@ -1,3 +1,5 @@
+import { SolidBlock } from './solidBlock';
+
 export class FloodOptions {
     
     private _areaX : number;
@@ -32,10 +34,29 @@ export class FloodOptions {
         this._active = v;
     }
     
+    private _solidColumns : SolidBlock[];
+    public get solidColumns() : SolidBlock[] {
+        return this._solidColumns;
+    }
+    public set solidColumns(v : SolidBlock[]) {
+        this._solidColumns = v;
+    }
+    
+    private _speed : number;
+    public get speed() : number {
+        return this._speed;
+    }
+    public set speed(v : number) {
+        this._speed = v;
+    }
+    
+    
     FloodOptions() {
         this._active = false;
         this._areaX = 0;
         this._areaY = 0;
+        this._solidColumns = [];
+        this._speed = 300;
     }
     
 }
